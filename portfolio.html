@@ -4,23 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio | Johnny Dellaluna</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Johnny Dellaluna</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+ <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><a href="index.html"> Johnny Dellaluna</a>
+        </button>
+        
+        <p class="navbar-text navbar-right"><a href="index.html" class="navbar-link">About</a></p>
+        <p class="navbar-text navbar-right"><a href="portfolio.html" class="navbar-link">Portfolio</a></p>
+        <p class="navbar-text navbar-right"><a href="contact.html" class="navbar-link">Contact</a></p>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <div id="main-container" class="container">
     <section class="main-section">
@@ -66,9 +67,11 @@
   </div>
 
   <footer>
-    <div class="container">
-      Copyright &copy; 2017 Johnny Dellaluna
-    </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <p>Copyright &copy; 2017 Johnny Dellaluna</p>
+      </div>
+    </nav>
   </footer>
 </body>
 

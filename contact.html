@@ -4,47 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact | Johnny Dellaluna</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Johnny Dellaluna</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><a href="index.html"> Johnny Dellaluna</a>
+        </button>
+        
+        <p class="navbar-text navbar-right"><a href="index.html" class="navbar-link">About</a></p>
+        <p class="navbar-text navbar-right"><a href="portfolio.html" class="navbar-link">Portfolio</a></p>
+        <p class="navbar-text navbar-right"><a href="contact.html" class="navbar-link">Contact</a></p>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
-
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-
-    </section>
+  <div class = "form container">
+    <form>
+      <div class="form-group">
+        <label for="nameentry">Name</label>
+        <input type="name" class="form-control" id="name" placeholder="John Smith">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com">
+      </div>
+      <textarea class="form-control" rows="3">Message</textarea>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
 
     <section class="sidebar">
       <div id="connect">
@@ -58,10 +50,11 @@
   </div>
 
   <footer>
-    <div class="container">
-      Copyright &copy; 2017 Johnny Dellaluna
-    </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <p>Copyright &copy; 2017 Johnny Dellaluna</p>
+      </div>
+    </nav>
   </footer>
-</body>
 
 </html>

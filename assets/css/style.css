@@ -113,6 +113,8 @@ footer {
 
 .sidebar {
   float: right;
+  border: solid;
+  border-width: 3px;
   width: 100%;
   max-width: 270px;
   padding: 30px;
@@ -237,5 +239,42 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-/*Need to add clearfix in here somewhere*/
-Contact GitHub API Training Shop Blog About
+
+.aboutme {
+  border: solid;
+  border-width: 3px;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+  .navbar {width: 100%;}
+  .jumbotron {width: 100%;}
+  .aboutme {width: 100%;}
+  .sidebar {width: 100%;}
+  .col-md-7 {width: 100%;}
+  form {width: 100%;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+  .navbar {width: 100%;}
+  .jumbotron {width: 100%;}
+  .aboutme {width: 66%;}
+  .sidebar {width: 33%;}
+  .col-md-7 {width: 66%;}
+  form {width: 66%;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+  .navbar {width: 100%;}
+  .jumbotron {width: 100%;}
+  .aboutme {width: 66%;}
+  .sidebar {width: 33%;}
+  .col-md-7 {width: 66%;}
+  form {width: 66%;}
+}
